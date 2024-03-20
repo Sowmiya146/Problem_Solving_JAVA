@@ -1,0 +1,68 @@
+LOGIC 1:
+1.To Find whether a number is even or odd without using MODULO,IF,ELSE.
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter the number");
+        int n = s.nextInt();
+
+        // 2-->10, 3-->11, 4-->100, 5-->101,......,10-->1010, 11-->1011
+        // n & 1 ---> 0 or 1
+        String[] arr  = new String[]{"even", "odd"};
+        System.out.println(arr[n & 1]);
+
+    }
+}
+
+
+
+
+LOGIC 2:
+2.To Find whether a number is even or odd without using modulo operator.
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter the number");
+        int n = s.nextInt();
+        if ((n & 1) == 0) {
+            System.out.println("Even");
+        } else {
+            System.out.println("odd");
+        }
+    }
+}
+
+
+
+
+LOGIC 3:
+3.To Find whether a number is even or odd without using modulo operator.
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter the number: ");
+        int n = s.nextInt();
+
+        int result = (n / 2) * 2;
+        if (result == n) {
+            System.out.println("Even");
+        } else {
+            System.out.println("odd");
+        }
+
+    }
+}
+
